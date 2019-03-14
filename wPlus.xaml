@@ -1,0 +1,61 @@
+﻿<Window x:Class="Rekenapplicatie.wPlus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rekenapplicatie"
+        mc:Ignorable="d"
+        Title="De Rekenkoning - Plussommen" Height="622.5" Width="1001.6" ResizeMode="NoResize" Icon="Basisschool de regenboog LOGO.png" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Lion King 2.jpg"/>
+    </Window.Background>
+    <Grid Width="1000" Height="600" MinWidth="1000" MinHeight="600">
+        <Button x:Name="btnTerug" Content="Terug" HorizontalAlignment="Left" Height="79" Margin="808,472,0,0" VerticalAlignment="Top" Width="143" Click="Button_Click" FontFamily="Arial" FontSize="48" BorderBrush="#00707070">
+            <Button.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblGetal1" Content="" HorizontalAlignment="Left" Height="69" Margin="268,55,0,0" VerticalAlignment="Top" Width="164" FontSize="20">
+            <Label.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="txtAntwoord" HorizontalAlignment="Left" Height="69" Margin="752,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" BorderBrush="#00ABADB3" TextAlignment="Center" FontSize="16" FontFamily="Arial">
+            <TextBox.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btnControleer" Content="Controleer" HorizontalAlignment="Left" Height="69" Margin="805,124,0,0" VerticalAlignment="Top" Width="139" Click="btnCheck_Click" FontSize="16" FontFamily="Arial">
+            <Button.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnToonSom" Content="Toon som" HorizontalAlignment="Left" Margin="31,55,0,0" VerticalAlignment="Top" Width="232" Height="69" BorderBrush="#00707070" Click="Button_Click_1" FontFamily="Arial" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblGetal2" Content="" HorizontalAlignment="Left" Height="69" Margin="511,55,0,0" VerticalAlignment="Top" Width="162" FontSize="20">
+            <Label.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Label.Background>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Margin="437,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="69" Width="69" FontFamily="Arial" FontSize="48" TextAlignment="Center" Text="+">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </TextBlock.Background></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="678,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="69" Width="69" FontFamily="Arial" FontSize="16" TextAlignment="Center">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </TextBlock.Background><Run FontSize="48" Text="="/></TextBlock>
+        <Label x:Name="lblAantalSommen" Content=" Som: 0" HorizontalAlignment="Left" Margin="31,165,0,0" VerticalAlignment="Top" Height="70" Width="232" FontFamily="Arial" FontSize="48">
+            <Label.Background>
+                <ImageBrush ImageSource="BUTTON.png"/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
